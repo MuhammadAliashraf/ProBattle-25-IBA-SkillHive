@@ -51,7 +51,7 @@ function Footer() {
     },
   ];
   return (
-    <footer class="bg-gray-800 text-white">
+    <footer class="bg-black text-white">
       <div class=" w-11/12 mx-auto grid max-w-full gap-y-8 gap-x-12  py-10 md:grid-cols-2 xl:grid-cols-4">
         <div class="max-w-sm">
           <div class="mb-6 flex h-12 items-center space-x-2">

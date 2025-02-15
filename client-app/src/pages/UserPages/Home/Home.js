@@ -8,8 +8,8 @@ const Home = () => {
   return (
     <div>
       <Header />
-      <PosFeatures />
       <AboutIndexPos />
+      <PosFeatures />
       <PosUSerRoles />
     </div>
   );

@@ -6,26 +6,26 @@ const AboutIndexPos = () => {
   const AboutItem = [
     {
       id: 1,
-      heading: "Inventory Management",
-      desc: `Lorem, ipsum dolor sit amet consectetur adipisicing elit.Quidem, reiciendis praesentium architecto
+      heading: " Easy Collection Management",
+      desc: `Create and organize your own skill-based collections effortlessly. Add tutorials, templates, and resources in one place.
       `,
     },
     {
       id: 2,
-      heading: "Sales & Payment Process",
-      desc: `Lorem, ipsum dolor sit amet consectetur adipisicing elit.Quidem, reiciendis praesentium architecto
+      heading: "Smart Search & Discovery",
+      desc: `Find the best resources quickly using tags, categories, and skill-based recommendations.
       `,
     },
     {
       id: 3,
-      heading: "Report and Analysis",
-      desc: `Lorem, ipsum dolor sit amet consectetur adipisicing elit.Quidem, reiciendis praesentium architecto
+      heading: "Community Collaboration",
+      desc: `Fork, improve, and share collections with others. Get feedback and engage with a learning-focused community.
       `,
     },
     {
       id: 4,
-      heading: "Secure Fast Transaction",
-      desc: `Lorem, ipsum dolor sit amet consectetur adipisicing elit.Quidem, reiciendis praesentium architecto
+      heading: "Fast & Secure Access",
+      desc: `Download resources instantly and keep your learning journey smooth with secure and reliable access.
       `,
     },
   ];
@@ -41,14 +41,13 @@ const AboutIndexPos = () => {
               className="text-4xl font-bold"
               style={{ fontSize: "clamp(20px, 4vw,45px)" }}
             >
-              About <span className="text-red-700">Index POS</span>
+              What is <span className="text-red-700">Skill Hive?</span>
             </h1>
             <p className="mt-4 text-black text-center text-lg md:w-[80%] mx-auto">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
-              autem optio similique? Ipsa sunt aliquam quia atque dolor dicta
-              consequuntur mollitia repellat deserunt, numquam corrupti
-              distinctio accusamus saepe asperiores, harum ad amet commodi
-              inventore, recusandae porro delectus similique et dignissimos.
+              SkillHive is a platform where people can share and learn new
+              skills easily. You can find useful resources, create your own
+              collections, and help others learn. Whether you're a beginner or
+              an expert, SkillSwap makes learning simple and fun.
             </p>
           </div>
         </div>

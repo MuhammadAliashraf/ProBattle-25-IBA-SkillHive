@@ -1,10 +1,11 @@
 import React from "react";
 import "./header.css";
+import HeaderImg from "../../assets/3024038-removebg-preview.png";
 
 const Header = () => {
   return (
     <>
-      <section className=" bg-primary pt-[70px] md:pt-16" id="home">
+      <section className="bg-black bg-primary pt-[70px] md:pt-16 " id="home">
         <div className="">
           <div className="row">
             <div className="col-lg-12">
@@ -13,13 +14,13 @@ const Header = () => {
                 data-wow-delay=".2s"
               >
                 <h1
-                  className="text-black font-bold text-center mb-8"
+                  className="text-white font-bold text-center mb-8"
                   style={{ fontSize: "clamp(20px, 4vw, 45px)" }}
                 >
                   Unlock Your Potential – Share, Learn, & Grow!
                 </h1>
                 <p
-                  className="text-black opacity-80 text-center mb-8"
+                  className="w-2/3 mx-auto text-white opacity-80 text-center mb-8 "
                   style={{ fontSize: "clamp(12px, 2vw, 20px)" }}
                 >
                   Create, manage, and explore skill-based collections filled
@@ -50,10 +51,11 @@ const Header = () => {
                 </ul>
               </div>
               <div
-                className="max-w-[845px] mx-auto text-center relative z-10 wow fadeInUp"
+                className="max-w-[550px] mx-auto text-center relative z-10 wow fadeInUp"
                 data-wow-delay=".25s"
               >
-                {/* <img src={HeaderImg} alt="hero-image" />
+                <img src={HeaderImg} alt="hero-image" />
+                {/* 
                 <img src={dotted} alt="shape" className="absolute bottom-0 left-[-30px] z-[-1]" />
                 <img src={dotted} alt="shape" className="absolute top-[-20px] right-[-20px] z-[-1]" /> */}
               </div>

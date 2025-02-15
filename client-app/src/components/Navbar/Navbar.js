@@ -29,16 +29,15 @@ export default function Navbar() {
   const token = false;
   const location = useLocation();
   const navigate = useNavigate();
-
   const handleComingSoon = () => {
     Toast.warning("Coming Soon..");
-  };
+};
 
   return (
     <Disclosure as="nav" className="text-black">
       {({ open }) => (
         <>
-          <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-7xl">
             <div className="relative flex h-20 items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
