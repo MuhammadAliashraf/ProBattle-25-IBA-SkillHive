@@ -1,5 +1,6 @@
 const settingsRouter = require('./routes/user');
 const productRouter = require('./routes/product');
+const collectionRouter = require('./routes/collection');
 const authRouter = require('./routes/auth');
 require('dotenv').config();
 require('express-async-errors');
@@ -29,6 +30,7 @@ app.use(bodyParser.urlencoded({ extended: true, limit: '100mb' }));
 // routes
 
 app.use('/api/auth', authRouter);
+app.use('/api/collection', collectionRouter);
 app.use('/api/product', auth, productRouter);
 app.use('/api/settings', auth, settingsRouter);
 // app.use('/api/jobs', auth, jobRouter);

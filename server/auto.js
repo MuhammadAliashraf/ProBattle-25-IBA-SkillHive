@@ -13,17 +13,13 @@ const modelTemplate = (name) => `
 const mongoose = require('mongoose');
 
 const ${name}Schema = new mongoose.Schema( {
-    name: { type: string, required: true },
-    phone: { type: string, required: true },
-    address: { type: string, required: false },
-     isActive: {
-      type: Boolean,
-      default: true,
-    },
-    isDelete: {
-      type: Boolean,
-      default: false,
-    },
+  name: String,
+  type: { type: String, enum: ["file", "folder"], required: true },
+  path: String, // Cloudinary URL (only for files)
+  parentId: { type: mongoose.Schema.Types.ObjectId, ref: "Upload", default: null },
+  children: [{ type: mongoose.Schema.Types.ObjectId, ref: "Upload" }],
+  tags: [String],
+  visibility: { type: String, enum: ["private", "public"], default: "private" }
 },
   {
     timestamps: true,
