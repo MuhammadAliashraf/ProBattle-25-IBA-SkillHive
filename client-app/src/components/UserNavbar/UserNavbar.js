@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { FaRegUser } from "react-icons/fa6";
 
@@ -6,7 +5,6 @@ import { IoMdArrowDropdown, IoMdMenu } from "react-icons/io";
 import { BsMenuButtonFill } from "react-icons/bs";
 
 import { RiMenuFill } from "react-icons/ri";
-
 
 export default function UserNavbar({ toggleBar, setToggleBar }) {
   const [showDropdown, setShowDropdown] = useState(false);
@@ -61,7 +59,7 @@ export default function UserNavbar({ toggleBar, setToggleBar }) {
                 </a>
                 <a
                   href="/logout"
-                //   onClick={() => handleLogout()}
+                  //   onClick={() => handleLogout()}
                   className="block px-5 py-2 rounded-md hover:bg-[#EFBC49]"
                 >
                   Logout
@@ -86,41 +84,29 @@ export default function UserNavbar({ toggleBar, setToggleBar }) {
         {showDropdown && (
           <div className="absolute top-full flex flex-col gap-2 bg-[#2B2B2B] w-full p-3 rounded z-30">
             <a
-              href="shop"
+              href="/"
               className="flex items-center border border-[#999] rounded-full text-[12px] px-3 py-2"
             >
-              <span>Shop All</span>
+              <span>Home</span>
             </a>
             <a
               href="shop"
               className="flex items-center border border-[#999] rounded-full text-[12px] px-3 py-2 "
             >
-              <span>Men</span>
+              <span>Collaborations</span>
             </a>
             <a
               href="shop"
-              className="flex items-center border border-[#999] rounded-full text-[12px] px-3 py-2 "
-            >
-              <span>Women</span>
-            </a>
-            <a
-              href="about"
               className="flex items-center border border-[#999] rounded-full text-[12px] px-3 py-2 "
             >
               <span>About</span>
             </a>
             <a
-              href="contact-us"
+              href="about"
               className="flex items-center border border-[#999] rounded-full text-[12px] px-3 py-2 "
             >
               <span>Contact</span>
-            </a>
-            <p
-            //   onClick={() => handleModalOpen("cartModal")}
-              className="flex items-center border border-[#999] rounded-full text-[12px] px-3 py-2"
-            >
-              <span>Cart</span>
-            </p>
+            </a>{" "}
           </div>
         )}
       </div>

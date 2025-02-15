@@ -1,8 +1,7 @@
-
-import React, { useState } from "react";
+import React from "react";
 
 function Dashboard(props) {
-  return <div>Dash</div>;
+  return <>dash</>;
 }
 
 export default Dashboard;

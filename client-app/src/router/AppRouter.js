@@ -7,11 +7,14 @@ import Home from "pages/Guest/Home/Home";
 import Login from "pages/Auth/Login/Login";
 import Register from "pages/Auth/Register/Register";
 import { Route, Routes, useLocation } from "react-router-dom";
+import Card from "components/Card/card";
+import DashboardRoutes from "./dashboardroutes";
 
 // Define All Roles Routers in this File
 
 function AppRouter() {
   const location = useLocation();
+
   return (
     <>
       <Routes>
@@ -49,6 +52,7 @@ function AppRouter() {
             </UserPagesLayout>
           }
         />
+        <Route path="/dashboard/*" element={<DashboardRoutes />} />
       </Routes>
     </>
   );

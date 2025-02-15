@@ -1,4 +1,3 @@
-
 import Sidebar from "components/Sidebar/Sidebar";
 import UserNavbar from "components/UserNavbar/UserNavbar";
 import React, { useState } from "react";
@@ -8,7 +7,7 @@ function UserPagesLayout({ children }) {
   // Corrected 'children'
   //remove h-[100vh] Then Footer Take the height of According To Content
   return (
-    <div className="bg-slate-500 h-full">
+    <div className="bg-slate-500 h-screen">
       <UserNavbar toggleBar={toggleBar} setToggleBar={setToggleBar} />
       <div className="flex">
         <Sidebar toggleBar={toggleBar}></Sidebar>
