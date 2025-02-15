@@ -1,11 +1,18 @@
-import React from 'react'
+import AboutIndexPos from "components/About-section/About-section";
+import Header from "components/Header/header";
+import PosFeatures from "components/Post-feature/post-feature";
+import PosUSerRoles from "components/Whocanuse/whocanuse";
+import React from "react";
 
 const Home = () => {
   return (
     <div>
-      <h1>Home</h1>
+      <Header />
+      <PosFeatures />
+      <AboutIndexPos />
+      <PosUSerRoles />
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

@@ -1,0 +1,199 @@
+img {
+  max-width: 100%;
+}
+/*===== All Button Style =====*/
+.ud-main-btn {
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 10px;
+  padding: 15px 25px;
+  border: 1px solid transparent;
+  color: var(--white);
+  cursor: pointer;
+  z-index: 5;
+  -webkit-transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out 0s;
+  background: var(--primary-color);
+}
+
+.ud-main-btn:hover {
+  color: var(--white);
+  background: var(--heading-color);
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+/* ===== Hero CSS ===== */
+.ud-hero {
+  background: var(--primary-color);
+  padding-top: 70px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .ud-hero {
+    padding-top: 160px;
+  }
+}
+
+@media (max-width: 767px) {
+  .ud-hero {
+    padding-top: 130px;
+  }
+}
+
+.ud-hero-content {
+  max-width: 80%;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.ud-hero-content .ud-hero-title {
+  color: var(--white);
+  font-weight: 700;
+  /* max-width: 780px; */
+  margin: auto;
+  /* font-size: 45px; */
+  line-height: 60px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .ud-hero-content .ud-hero-title {
+    font-size: 38px;
+    line-height: 50px;
+  }
+}
+
+@media (max-width: 767px) {
+  .ud-hero-content .ud-hero-title {
+    font-size: 26px;
+    line-height: 38px;
+  }
+}
+
+.ud-hero-content .ud-hero-desc {
+  font-weight: normal;
+  /* font-size: 20px; */
+  line-height: 35px;
+  text-align: center;
+  color: var(--white);
+  opacity: 0.8;
+  /* max-width: 600px; */
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 767px) {
+  .ud-hero-content .ud-hero-desc {
+    font-size: 16px;
+    line-height: 30px;
+  }
+}
+
+.ud-hero-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.ud-hero-buttons .ud-main-btn {
+  margin: 8px;
+}
+
+@media (max-width: 767px) {
+  .ud-hero-buttons .ud-main-btn {
+    margin: 5px;
+  }
+}
+
+@media (max-width: 767px) {
+  .ud-hero-buttons .ud-main-btn {
+    padding: 12px 16px;
+  }
+}
+
+.ud-hero-buttons .ud-white-btn {
+  background: var(--white);
+  color: var(--heading-color);
+}
+
+.ud-hero-buttons .ud-white-btn:hover {
+  -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  background: #fefefe;
+  color: var(--primary-color);
+}
+.ud-hero-buttons .ud-link-btn {
+  color: var(--white);
+  background: var(--red);
+}
+.ud-hero-buttons .ud-link-btn:hover {
+  color: var(--red);
+  background: var(--white);
+}
+
+.ud-hero-brands-wrapper {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.ud-hero-brands-wrapper img {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  opacity: 0.5;
+  max-width: 250px;
+}
+
+.ud-hero-brands-wrapper img:hover {
+  opacity: 1;
+}
+
+.ud-hero-image {
+  max-width: 845px;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.ud-hero-image img {
+  max-width: 100%;
+  text-align: center;
+}
+
+.ud-hero-image .shape {
+  position: absolute;
+  z-index: -1;
+}
+
+.ud-hero-image .shape.shape-1 {
+  bottom: 0;
+  left: -30px;
+}
+
+.ud-hero-image .shape.shape-2 {
+  top: -20px;
+  right: -20px;
+}

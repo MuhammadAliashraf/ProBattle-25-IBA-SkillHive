@@ -33,9 +33,9 @@ export default function Navbar() {
   const handleComingSoon = () => {
     Toast.warning("Coming Soon..");
   };
-  
+
   return (
-    <Disclosure as="nav" className="bg-gray-800">
+    <Disclosure as="nav" className="text-black">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -71,8 +71,8 @@ export default function Navbar() {
                           to={item.href}
                           className={classNames(
                             location.pathname === item.href
-                              ? "bg-white text-orange-500"
-                              : "text-white transition ease-in-out duration-300 hover:bg-gray-100 hover:text-orange-500",
+                              ? "bg-white text-red-500"
+                              : "text-black transition ease-in-out duration-300 hover:bg-gray-100 hover:text-orange-500",
                             "rounded-md px-3 py-2 text-sm font-medium"
                           )}
                           aria-current={item.current ? "page" : undefined}
